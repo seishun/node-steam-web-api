@@ -2,6 +2,9 @@
   "name": "steam-web-api",
   "version": "0.0.1",
   "description": "Steam Web API for Node.js",
+  "dependencies":{
+    "json-bigint": "0.1.4"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/seishun/node-steam-web-api"
