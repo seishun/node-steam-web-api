@@ -39,7 +39,8 @@ module.exports = function getInterface(iface, apiKey) {
         data += chunk;
       });
       res.on('end', function() {
-        callback(res.statusCode, JSON.parse(data));
+        var bigjs = require('json-bigint');
+        callback(res.statusCode, bigjs.parse(data));
       });
     });
     
